@@ -1,0 +1,60 @@
+<!--Nicholas Moore(nxm67420)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--Page Design-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Start Button-->
+    <div id="mainPage">
+        <img src="images/coin.gif" alt="spinnnig coin" id="coin">
+        <button id="startBtn" onmousedown="themeMusic.play()"><b>Start Game</b></button>
+    </div>
+
+    <!--Main Container-->
+    <div id="container">
+        <!--Exit Game Button-->
+        <div id="exitDiv">
+            <button id="exitBtn"><b>Exit Game</b></button>
+        </div>
+
+        <!--Audio Control-->
+        <div id="audioDiv">
+            <button id="soundOn" onmousedown="themeMusic.play()" class="audio">🔊</button>
+            <button id="soundOff" onmousedown="themeMusic.pause()" class="audio">🔇</button>
+        </div>
+
+        <!--Total Score-->
+        <div id="lblScore">
+            <p><b id="txtScore"></b></p>
+            <p id="star"></p>
+            <!--Delete This-->
+            <p id="listwords"></p>
+        </div>
+
+        <!--Input Text-->
+        <div id="guessGame">
+            <h1 id="guess">Guess The Word</h1>
+            <p style="font-size: 50px;text-align:center" id="attempts"></p>
+            <p style='font-size:50px' align="center" id="wordFromList"></p>
+            <p id="answerResponse"></p>
+            <p id="word"></p>
+            <input type="text" id="textArea" placeholder="Enter Answer" autofocus>
+            <button id="submitBtn" onmousedown="clicking.play()" width="200" height='200px'>Submit</button>
+        </div>
+
+
+        <!--Game Over Display-->
+        <div id="gameOver">
+            <img src="images/gameover.gif" alt="Game Over">
+        </div>
+    </div>
+    <!--Javascript-->
+    <script type="text/javascript" src="myJavascript.js"></script>
+</body>
+</html>
